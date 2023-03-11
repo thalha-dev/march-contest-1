@@ -1,8 +1,16 @@
 function calculate(num1, num2, operator) {
-  // Use if-else statements to determine which arithmetic operation to perform based on the operator entered.
-  // return the final value that you get after operating on num1 and num2 based on what the operator is
-  // if operator == "+" then return num1+num2 , else if operator == "-" then return num1-num2 and so on....
-  //   write your code here -->
+  let result = null;
+
+  if (operator === "+") {
+    result = num1 + num2;
+  } else if (operator === "-") {
+    result = num1 - num2;
+  } else if (operator === "*") {
+    result = num1 * num2;
+  } else {
+    result = num1 / num2;
+  }
+  return result;
 }
 
 // ignore the function below
